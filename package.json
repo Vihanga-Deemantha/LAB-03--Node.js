@@ -1,0 +1,22 @@
+{
+  "name": "lab-03--node",
+  "version": "1.0.0",
+  "description": "In this lab, you will learn the basics of Node.js, Git and GitHub flows. You will be introduced to some basic Node.js commands, create a Git repository and work with GitHub to commit, push, and pull changes.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vihanga-Deemantha/LAB-03--Node.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Vihanga-Deemantha/LAB-03--Node.js/issues"
+  },
+  "homepage": "https://github.com/Vihanga-Deemantha/LAB-03--Node.js#readme"
+}
