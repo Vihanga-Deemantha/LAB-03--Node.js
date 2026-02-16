@@ -4,6 +4,7 @@ const fs = require('fs');
 const http = require('http');
 const https = require('https');
 const myModule = require('./my-module');
+const condition = true; // Example condition for the promise
 
 fs.readFile('file.txt', 'utf8', function (err, data) {
 if (err) throw err;
@@ -35,3 +36,16 @@ console.log("Error: " + err.message);
 });
 
 console.log(myModule.myFunction());
+
+const myPromise = new Promise((resolve, reject) => {
+if (condition) {
+resolve('Success!');
+} else {
+reject('Failure!');
+}
+});
+myPromise.then((result) => {
+console.log(result);
+}).catch((error) => {
+console.log(error);
+});
