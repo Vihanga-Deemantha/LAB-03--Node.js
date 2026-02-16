@@ -3,6 +3,7 @@ console.log("Node.js labsheet 03 - Git and GitHub flows");
 const fs = require('fs');
 const http = require('http');
 const https = require('https');
+const myModule = require('./my-module');
 
 fs.readFile('file.txt', 'utf8', function (err, data) {
 if (err) throw err;
@@ -32,3 +33,5 @@ console.log(JSON.parse(data));
 }).on('error', (err) => {
 console.log("Error: " + err.message);
 });
+
+console.log(myModule.myFunction());
